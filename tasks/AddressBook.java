@@ -38,7 +38,7 @@ public class AddressBook {
 					+ this.secondName + " отмечает День Рождения. Испольнилось: " + (today.getYear() - birthday.getYear()));
 	}
 
-	protected LocalDate getBirthday() {
+	public LocalDate getBirthday() {
 		return this.birthday;
 	}
 
@@ -52,17 +52,14 @@ public class AddressBook {
 		oleg.newContact("Олег", "Андреев", 89998887765L, "test2@gmail.com");
 		oleg.setBirthday(2003, 9, 16);
 		oleg.notificationBirthday();
-
-		AddressBook kate = new AddressBook();
-		oleg.newContact("Екатерина", "Попова", 89998887745L, "test3@gmail.com");
-		oleg.setBirthday(2013, 8, 16);
-		oleg.notificationBirthday();
-
-		System.out.println("Количество контактов в записной книжке: " + AddressBook.countContact);
-
 		oleg.call();
 		oleg.sendMassage();
 
+		AddressBook kate = new AddressBook();
+		kate.newContact("Екатерина", "Попова", 89998887745L, "test3@gmail.com");
+		kate.setBirthday(2013, 8, 16);
+		kate.notificationBirthday();
 
+		System.out.println("Количество контактов в записной книжке: " + AddressBook.countContact);
 	}
 }
