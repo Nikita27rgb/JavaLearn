@@ -21,7 +21,7 @@ public class CarInfo {
 
     @Override
     public String toString() {
-        return getClass().getName() + " [" + yearOld + " years, " + mileage + " miles, " + color + " - color, " + "was road accodent - " + wasRoadAccident + ", " + price + "$" + "]";
+        return getClass().getName() + " [" + yearOld + " years, " + mileage + " miles, " + color + " - color, " + "was road accident - " + wasRoadAccident + ", " + price + "$" + "]";
     }
 
     public void setYearOld(int yearOld) {
