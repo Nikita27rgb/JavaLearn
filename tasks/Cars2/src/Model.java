@@ -22,6 +22,15 @@ public class Model {
 		this.maxSpeed = maxSpeed;
 	}
 
+	Model() {
+		this.brand = "default";
+		this.model = "default";
+		this.weight = 1903;
+		this.length = 3500;
+		this.width = 1800;
+		this.countWheel = 4;
+		this.maxSpeed = 200;
+	}
 	public String getBrand() {
 		return brand;
 	}
@@ -78,5 +87,7 @@ public class Model {
 		this.maxSpeed = maxSpeed;
 	}
 
-
+	void printInfo(){
+		System.out.printf("Brand - %s\nModel - %s\nMax speed - %d km/h\nWeight - %d kg, length - %d mm, width - %d mm\nWheels - %d pcs ", brand, model, maxSpeed, weight, length, width, countWheel);
+	}
 }
