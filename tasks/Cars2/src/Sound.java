@@ -34,4 +34,8 @@ public class Sound {
 	public void skidding() {
 	}
 
+	@Override
+	public String toString() {
+		return new StringBuilder(getClass().getName()).append(" [Rrrrrr....]").toString();
+	}
 }

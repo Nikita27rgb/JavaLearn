@@ -17,6 +17,15 @@ public class Car {
         this.suspension = suspension;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder strB = new StringBuilder("").append(carInfo + "\n").append(model + "\n").append(engine + "\n").append(sound + "\n").append(suspension + "\n").append("Wheels: " + wheels.length + "\n");
+        for (int i = 0; i < wheels.length; i++) {
+            strB.append("\t" + wheels[i] + "\n");
+        }
+        return strB.toString();
+    }
+
 //    public static void main(String args[]) {
 //        if (args.length < 7) {
 //            System.out.println("Недостаточно аргументов для создания объекта класса Model.");

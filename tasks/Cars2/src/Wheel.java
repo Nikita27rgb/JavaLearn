@@ -1,77 +1,82 @@
 public class Wheel {
-	private String brand;
-	private int radius;
-	private int weight;
+    private String brand;
+    private int radius;
+    private int weight;
 
-	private int width;
+    private int width;
 
-	private int height;
+    private int height;
 
-	public enum WheelType {
-		SUMMER,
-		WINTER,
-		ALLSEASON,
-	}
+    public enum WheelType {
+        SUMMER,
+        WINTER,
+        ALLSEASON,
+    }
 
-	private WheelType wheelType;
+    private WheelType wheelType;
 
-	Wheel(String brand, int radius, int weight, int width, int height, WheelType wheelType) {
-		this.brand = brand;
-		this.radius = radius;
-		this.weight = weight;
-		this.width = width;
-		this.height = height;
-		this.wheelType = wheelType;
-	}
+    Wheel(String brand, int radius, int weight, int width, int height, WheelType wheelType) {
+        this.brand = brand;
+        this.radius = radius;
+        this.weight = weight;
+        this.width = width;
+        this.height = height;
+        this.wheelType = wheelType;
+    }
 
-	public String getBrand() {
-		return brand;
-	}
+    @Override
+    public String toString() {
+        return new StringBuilder(getClass().getName()).append(" [" + brand + ", radius: " + radius + ", weight: " + weight + ", width: " + width + ", height: " + height + ", wheel type: " + wheelType + "]").toString();
+    }
 
-	public int getRadius() {
-		return radius;
-	}
+    public String getBrand() {
+        return brand;
+    }
 
-	public int getWidth() {
-		return width;
-	}
+    public int getRadius() {
+        return radius;
+    }
 
-	public int getWeight() {
-		return weight;
-	}
+    public int getWidth() {
+        return width;
+    }
 
-	public int getHeight() {
-		return height;
-	}
+    public int getWeight() {
+        return weight;
+    }
 
-	public WheelType getWheelType() {
-		return wheelType;
-	}
+    public int getHeight() {
+        return height;
+    }
 
-	public void setBrand(String brand) {
-		this.brand = brand;
-	}
+    public WheelType getWheelType() {
+        return wheelType;
+    }
 
-	public void setRadius(int radius) {
-		this.radius = radius;
-	}
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
 
-	public void setWidth(int width) {
-		this.width = width;
-	}
+    public void setRadius(int radius) {
+        this.radius = radius;
+    }
 
-	public void setWeight(int weight) {
-		this.weight = weight;
-	}
+    public void setWidth(int width) {
+        this.width = width;
+    }
 
-	public void setHeight(int height) {
-		this.height = height;
-	}
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
 
-	public void setWheelType(WheelType wheelType) {
-		this.wheelType = wheelType;
-	}
+    public void setHeight(int height) {
+        this.height = height;
+    }
 
-	public void wheelInfo() {
-	}
+    public void setWheelType(WheelType wheelType) {
+        this.wheelType = wheelType;
+    }
+
+    public void wheelInfo() {
+    }
 }

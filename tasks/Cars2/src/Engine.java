@@ -1,63 +1,68 @@
 public class Engine {
-	private String brand;
-	private String modelEngine;
-	private double horsePower;
-	private int torque;
+    private String brand;
+    private String modelEngine;
+    private double horsePower;
+    private int torque;
 
-	Engine(String brand, String modelEngine, double horsePower, int torque) {
-		this.brand = brand;
-		this.modelEngine = modelEngine;
-		this.horsePower = horsePower;
-		this.torque = torque;
-	}
+    Engine(String brand, String modelEngine, double horsePower, int torque) {
+        this.brand = brand;
+        this.modelEngine = modelEngine;
+        this.horsePower = horsePower;
+        this.torque = torque;
+    }
 
-	public String getBrand() {
-		return brand;
-	}
+    @Override
+    public String toString() {
+        return new StringBuilder(getClass().getName()).append(" [" + brand + ", model: " + modelEngine + ", horse power: " + horsePower + ", torque: " + torque + "]").toString();
+    }
 
-	public void setBrand(String brand) {
-		this.brand = brand;
-	}
+    public String getBrand() {
+        return brand;
+    }
 
-	public String getModelEngine() {
-		return modelEngine;
-	}
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
 
-	public void setModelEngine(String modelEngine) {
-		this.modelEngine = modelEngine;
-	}
+    public String getModelEngine() {
+        return modelEngine;
+    }
 
-	public double getHorsePower() {
-		return horsePower;
-	}
+    public void setModelEngine(String modelEngine) {
+        this.modelEngine = modelEngine;
+    }
 
-	public void setHorsePower(double horsePower) {
-		this.horsePower = horsePower;
-	}
+    public double getHorsePower() {
+        return horsePower;
+    }
 
-	public int getTorque() {
-		return torque;
-	}
+    public void setHorsePower(double horsePower) {
+        this.horsePower = horsePower;
+    }
 
-	public void setTorque(int torque) {
-		this.torque = torque;
-	}
+    public int getTorque() {
+        return torque;
+    }
 
-	public enum FuelType {
-		DIESEL,
-		GASOLINE
-	}
+    public void setTorque(int torque) {
+        this.torque = torque;
+    }
 
-	private FuelType fuelType;
+    public enum FuelType {
+        DIESEL,
+        GASOLINE
+    }
 
-	public void setFuelType(FuelType fuelType) {
-		this.fuelType = fuelType;
-	}
+    private FuelType fuelType;
 
-	public FuelType getFuelType() {
-		return this.fuelType;
-	}
+    public void setFuelType(FuelType fuelType) {
+        this.fuelType = fuelType;
+    }
 
-	public void engineInfo() {
-	}
+    public FuelType getFuelType() {
+        return this.fuelType;
+    }
+
+    public void engineInfo() {
+    }
 }
