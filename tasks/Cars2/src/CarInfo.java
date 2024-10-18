@@ -14,8 +14,14 @@ public class CarInfo {
         this.wasRoadAccident = wasRoadAccident;
         this.onTheGo = onTheGo;
     }
-	    public int getYearOld() {
-       return yearOld;
+
+    public int getYearOld() {
+        return yearOld;
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getName() + " [" + yearOld + " years, " + mileage + " miles, " + color + " - color, " + "was road accodent - " + wasRoadAccident + ", " + price + "$" + "]";
     }
 
     public void setYearOld(int yearOld) {

@@ -88,6 +88,6 @@ public class Model {
 	}
 
 	void printInfo(){
-		System.out.printf("Brand - %s\nModel - %s\nMax speed - %d km/h\nWeight - %d kg, length - %d mm, width - %d mm\nWheels - %d pcs ", brand, model, maxSpeed, weight, length, width, countWheel);
+		System.out.printf("Brand - %s\nModel - %s\nMax speed - %d km/h\nWeight - %d kg, length - %d mm, width - %d mm\nWheels - %d pcs\n", brand, model, maxSpeed, weight, length, width, countWheel);
 	}
 }

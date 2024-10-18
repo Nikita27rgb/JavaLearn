@@ -27,6 +27,7 @@ public class Main {
 
         cars[0] = new Car(carInfo, model, engine, wheels, sound, suspension);
         cars[0].model.printInfo();
+        System.out.println(cars[0].carInfo.toString());
 
     }
 }
